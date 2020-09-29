@@ -22,7 +22,7 @@ export default class Note extends React.Component {
         'content-type': 'application/json'
       }
     })
-      .then(async res => {
+      .then(res => {
         if (!res.ok){
           return res.json().then(e => Promise.reject(e))
         }
